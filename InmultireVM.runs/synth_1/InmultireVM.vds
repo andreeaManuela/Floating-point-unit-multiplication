@@ -1,0 +1,327 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Dec 21 17:02:28 2022
+# Process ID: 15456
+# Current directory: C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.runs/synth_1
+# Command line: vivado.exe -log InmultireVM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source InmultireVM.tcl
+# Log file: C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.runs/synth_1/InmultireVM.vds
+# Journal file: C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source InmultireVM.tcl -notrace
+Command: synth_design -top InmultireVM -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24008
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1089.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'InmultireVM' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/InmultireVM.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'Sumator8' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Sumator8.vhd:17]
+	Parameter n bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Sumator8' (1#1) [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Sumator8.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'Inmultire' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Inmultire.vhd:17]
+	Parameter n bound to: 23 - type: integer 
+WARNING: [Synth 8-614] signal 'zeroMantisa' is read in the process but is not in the sensitivity list [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Inmultire.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'Inmultire' (2#1) [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Inmultire.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'Normalizare' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Normalizare.vhd:16]
+	Parameter n bound to: 8 - type: integer 
+WARNING: [Synth 8-614] signal 'Start' is read in the process but is not in the sensitivity list [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Normalizare.vhd:19]
+WARNING: [Synth 8-614] signal 'exponentIn' is read in the process but is not in the sensitivity list [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Normalizare.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'Normalizare' (3#1) [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Normalizare.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'Rotunjire' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Rotunjire.vhd:11]
+	Parameter n bound to: 23 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Rotunjire' (4#1) [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Rotunjire.vhd:11]
+INFO: [Synth 8-638] synthesizing module 'Control' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:21]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Control' (5#1) [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:21]
+WARNING: [Synth 8-614] signal 'depasireInfNorm' is read in the process but is not in the sensitivity list [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/InmultireVM.vhd:104]
+WARNING: [Synth 8-614] signal 'mantisaZero' is read in the process but is not in the sensitivity list [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/InmultireVM.vhd:112]
+INFO: [Synth 8-256] done synthesizing module 'InmultireVM' (6#1) [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/InmultireVM.vhd:13]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1089.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1089.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1089.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'stare_curenta_reg' in module 'Control'
+WARNING: [Synth 8-327] inferring latch for variable 'sup_reg' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Sumator8.vhd:41]
+WARNING: [Synth 8-327] inferring latch for variable 'inf_reg' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Sumator8.vhd:39]
+WARNING: [Synth 8-327] inferring latch for variable 'nr1_reg' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Inmultire.vhd:30]
+WARNING: [Synth 8-327] inferring latch for variable 'nr2_reg' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Inmultire.vhd:31]
+WARNING: [Synth 8-327] inferring latch for variable 'zero_reg' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Inmultire.vhd:27]
+WARNING: [Synth 8-327] inferring latch for variable 'gata_reg' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Inmultire.vhd:33]
+WARNING: [Synth 8-327] inferring latch for variable 'produsOut_reg' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Normalizare.vhd:41]
+WARNING: [Synth 8-327] inferring latch for variable 'Terminat_reg' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Normalizare.vhd:42]
+WARNING: [Synth 8-327] inferring latch for variable 'depasireInf_reg' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Normalizare.vhd:39]
+WARNING: [Synth 8-327] inferring latch for variable 'exponentOut_reg' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Normalizare.vhd:43]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 inactiv |                             0000 |                             0000
+                    init |                             0001 |                             0001
+                  checkx |                             0010 |                             0010
+                  checky |                             0011 |                             0011
+                  addexp |                             0100 |                             0100
+                  depsup |                             0101 |                             0101
+                  depinf |                             0110 |                             0110
+                multiply |                             0111 |                             0111
+             normalizare |                             1000 |                             1000
+               rotunjire |                             1001 |                             1001
+                  finish |                             1010 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stare_curenta_reg' using encoding 'sequential' in module 'Control'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1089.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 8     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   48 Bit        Muxes := 50    
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   23 Bit        Muxes := 2     
+	  11 Input    4 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 47    
+	  11 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP InmultireaMantiselor/p0, operation Mode is: A*B.
+DSP Report: operator InmultireaMantiselor/p0 is absorbed into DSP InmultireaMantiselor/p0.
+DSP Report: operator InmultireaMantiselor/p0 is absorbed into DSP InmultireaMantiselor/p0.
+DSP Report: Generating DSP InmultireaMantiselor/p0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator InmultireaMantiselor/p0 is absorbed into DSP InmultireaMantiselor/p0.
+DSP Report: operator InmultireaMantiselor/p0 is absorbed into DSP InmultireaMantiselor/p0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 1197.012 ; gain = 107.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Inmultire   | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Inmultire   | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 1205.859 ; gain = 116.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 1206.074 ; gain = 117.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 1206.074 ; gain = 117.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 1206.074 ; gain = 117.047
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[46] with 1st driver pin 'z_OBUF[22]_inst_i_2/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[46] with 2nd driver pin 'z_OBUF[22]_inst_i_3/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[45] with 1st driver pin 'z_OBUF[21]_inst_i_2/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[45] with 2nd driver pin 'z_OBUF[21]_inst_i_3/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[44] with 1st driver pin 'z_OBUF[20]_inst_i_2/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[44] with 2nd driver pin 'z_OBUF[20]_inst_i_3/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[43] with 1st driver pin 'z_OBUF[19]_inst_i_2/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[43] with 2nd driver pin 'z_OBUF[19]_inst_i_3/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[42] with 1st driver pin 'z_OBUF[18]_inst_i_2/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[42] with 2nd driver pin 'z_OBUF[18]_inst_i_3/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[41] with 1st driver pin 'z_OBUF[17]_inst_i_2/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[41] with 2nd driver pin 'z_OBUF[17]_inst_i_3/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[40] with 1st driver pin 'z_OBUF[16]_inst_i_2/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[40] with 2nd driver pin 'z_OBUF[16]_inst_i_3/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[39] with 1st driver pin 'z_OBUF[15]_inst_i_2/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[39] with 2nd driver pin 'z_OBUF[15]_inst_i_3/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[38] with 1st driver pin 'z_OBUF[14]_inst_i_2/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[38] with 2nd driver pin 'z_OBUF[14]_inst_i_3/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[37] with 1st driver pin 'z_OBUF[13]_inst_i_2/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[37] with 2nd driver pin 'z_OBUF[13]_inst_i_3/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[36] with 1st driver pin 'z_OBUF[12]_inst_i_2/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[36] with 2nd driver pin 'z_OBUF[12]_inst_i_3/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[35] with 1st driver pin 'z_OBUF[11]_inst_i_2/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[35] with 2nd driver pin 'z_OBUF[11]_inst_i_3/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[34] with 1st driver pin 'z_OBUF[10]_inst_i_2/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[34] with 2nd driver pin 'z_OBUF[10]_inst_i_3/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[33] with 1st driver pin 'z_OBUF[9]_inst_i_2/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[33] with 2nd driver pin 'z_OBUF[9]_inst_i_3/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[32] with 1st driver pin 'z_OBUF[8]_inst_i_2/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[32] with 2nd driver pin 'z_OBUF[8]_inst_i_3/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[31] with 1st driver pin 'z_OBUF[7]_inst_i_2/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[31] with 2nd driver pin 'z_OBUF[7]_inst_i_3/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[30] with 1st driver pin 'z_OBUF[6]_inst_i_2/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[30] with 2nd driver pin 'z_OBUF[6]_inst_i_3/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[29] with 1st driver pin 'z_OBUF[5]_inst_i_2/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[29] with 2nd driver pin 'z_OBUF[5]_inst_i_3/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[28] with 1st driver pin 'z_OBUF[4]_inst_i_2/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[28] with 2nd driver pin 'z_OBUF[4]_inst_i_3/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[27] with 1st driver pin 'z_OBUF[3]_inst_i_2/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[27] with 2nd driver pin 'z_OBUF[3]_inst_i_3/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[26] with 1st driver pin 'z_OBUF[2]_inst_i_2/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[26] with 2nd driver pin 'z_OBUF[2]_inst_i_3/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[25] with 1st driver pin 'z_OBUF[1]_inst_i_2/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[25] with 2nd driver pin 'z_OBUF[1]_inst_i_3/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[24] with 1st driver pin 'z_OBUF[0]_inst_i_2/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin NormalizareaRezultatului/produsNormalizat[24] with 2nd driver pin 'z_OBUF[0]_inst_i_3/O' [C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.srcs/sources_1/new/Control.vhd:33]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|       23|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 1206.074 ; gain = 117.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 1206.074 ; gain = 117.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 1206.074 ; gain = 117.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 1206.074 ; gain = 117.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     2|
+|2     |DSP48E1 |     2|
+|3     |LUT1    |     1|
+|4     |LUT2    |   119|
+|5     |LUT3    |    37|
+|6     |LUT4    |    34|
+|7     |LUT5    |   120|
+|8     |LUT6    |   452|
+|9     |FDRE    |     6|
+|10    |LD      |    48|
+|11    |LDP     |     1|
+|12    |IBUF    |    65|
+|13    |OBUF    |    33|
++------+--------+------+
+
+Report Instance Areas: 
++------+-----------------------+----------+------+
+|      |Instance               |Module    |Cells |
++------+-----------------------+----------+------+
+|1     |top                    |          |   920|
+|2     |  AdunareaExponentilor |Sumator8  |    19|
+|3     |  InmultireaMantiselor |Inmultire |   724|
+|4     |  UnitateControl       |Control   |    72|
++------+-----------------------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 1206.074 ; gain = 117.047
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 46 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 1206.074 ; gain = 117.047
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 1206.074 ; gain = 117.047
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1218.051 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 51 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 46 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1218.051 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 49 instances were transformed.
+  LD => LDCE: 2 instances
+  LD => LDCE (inverted pins: G): 46 instances
+  LDP => LDPE: 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 15 Warnings, 46 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:33 . Memory (MB): peak = 1218.051 ; gain = 129.023
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Andreea/Desktop/SSC/InmultireVM/InmultireVM.runs/synth_1/InmultireVM.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file InmultireVM_utilization_synth.rpt -pb InmultireVM_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 21 17:03:12 2022...

@@ -1,0 +1,1 @@
+-wto "d1cbb21008864c358cdbfc0acfd48cbe" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "Sumator8_behav" "xil_defaultlib.Sumator8" -log "elaborate.log" 

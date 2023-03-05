@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../InmultireVM.srcs/sources_1/new/Control.vhd" \
+"../../../../InmultireVM.srcs/sources_1/new/Inmultire.vhd" \
+"../../../../InmultireVM.srcs/sources_1/new/Sumator8.vhd" \
+"../../../../InmultireVM.srcs/sources_1/new/Normalizare.vhd" \
+"../../../../InmultireVM.srcs/sources_1/new/Rotunjire.vhd" \
+"../../../../InmultireVM.srcs/sources_1/new/InmultireVM.vhd" \
+
+# Do not sort compile order
+nosort

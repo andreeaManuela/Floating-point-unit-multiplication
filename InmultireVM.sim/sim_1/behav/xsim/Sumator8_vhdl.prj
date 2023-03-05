@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../InmultireVM.srcs/sources_1/new/sum1bit.vhd" \
+"../../../../InmultireVM.srcs/sources_1/new/Sumator8.vhd" \
+
+# Do not sort compile order
+nosort
